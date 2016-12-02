@@ -1,0 +1,564 @@
+<!DOCTYPE  html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ofertas</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/social-icons.css" type="text/css" media="screen" />
+		<!--[if IE 8]>
+			<link rel="stylesheet" type="text/css" media="screen" href="css/ie8-hacks.css" />
+		<![endif]-->
+		<!-- ENDS CSS -->	
+		
+		<!-- GOOGLE FONTS 
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>-->
+		
+
+		
+		
+		<!--[if IE]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!--[if IE 6]>
+			<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+			<script>
+	      		/* EXAMPLE */
+	      		//DD_belatedPNG.fix('*');
+	    	</script>
+		<![endif]-->
+		<!-- ENDS JS -->
+		
+		
+		<!-- Tweet -->
+		<link rel="stylesheet" href="css/jquery.tweet.css" media="all"  type="text/css"/> 
+		<script src="js/tweet/jquery.tweet.js" type="text/javascript"></script> 
+		<!-- ENDS Tweet -->
+		
+		<!-- Fancybox -->
+		<link rel="stylesheet" href="js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<!-- ENDS Fancybox -->
+			
+		<!-- Ion.RangeSlider -->
+    <link href="admin3/vendors/normalize-css/normalize.css" rel="stylesheet">
+    <link href="admin3/vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="admin3/vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+<!-- Custom Theme Style -->
+    <link href="admin3/build/css/custom.min.css" rel="stylesheet">
+
+     <!-- Bootstrap -->
+    <link href="admin3/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="admin3/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="admin3/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="admin3/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Ion.RangeSlider -->
+    <link href="admin3/vendors/normalize-css/normalize.css" rel="stylesheet">
+    <link href="admin3/vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="admin3/vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <!-- Bootstrap Colorpicker -->
+    <link href="admin3/vendors/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+
+    <link href="admin3/vendors/cropper/dist/cropper.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="admin3/build/css/custom.min.css" rel="stylesheet">
+        <!-- [ Angular] 
+        =========================================================================================================================-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/controller_egresado.js"></script>
+
+    		<!-- JS -->
+		<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+		<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+
+		<!-- Isotope -->
+		<script src="js/jquery.isotope.min.js"></script>
+
+		
+		<!-- tabs -->
+		<link rel="stylesheet" href="css/tabs.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/tabs.js"></script>
+  		<!-- ENDS tabs -->
+  		
+  		<!-- prettyPhoto -->
+		<script type="text/javascript" src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+		<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" />
+		<!-- ENDS prettyPhoto -->
+		
+		
+		
+		<!-- poshytip -->
+		<link rel="stylesheet" href="js/poshytip-1.0/src/tip-twitter/tip-twitter.css" type="text/css" />
+		<link rel="stylesheet" href="js/poshytip-1.0/src/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
+		<script type="text/javascript" src="js/poshytip-1.0/src/jquery.poshytip.min.js"></script>
+		<!-- ENDS poshytip -->
+
+		<!-- superfish -->
+		<link rel="stylesheet" media="screen" href="css/superfish.css" /> 
+		<link rel="stylesheet" media="screen" href="css/superfish-left.css" /> 
+		<script type="text/javascript" src="js/superfish-1.4.8/js/hoverIntent.js"></script>
+		<script type="text/javascript" src="js/superfish-1.4.8/js/superfish.js"></script>
+		<script type="text/javascript" src="js/superfish-1.4.8/js/supersubs.js"></script>
+		<!-- ENDS superfish -->
+   <script src="js/modal2/dist/sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="js/modal2/dist/sweetalert.css">
+
+   <script src="js/modal2/dist/ngSweetAlert.js"></script>
+  <link rel="stylesheet" href="js/modal2/dist/ngSweetAlert.min.css">
+
+
+	</head>
+	<body ng-app="myapp" ng-controller="admin" style="color: #7e8082;
+    background: #ffffff;"  ng-cloak>
+
+		
+			<!-- Menu -->
+			<div id="menu" ng-controller="registro_egresado" >
+			<!-- ENDS menu-holder -->
+				<div id="menu-holder">
+					<!-- wrapper-menu -->
+					<div class="wrapper">
+						<!-- Navigation -->
+						<a href="index.html"><img id="logo" src="unilogo.png" alt="Nova" /></a>
+						<ul id="nav" class="sf-menu">
+
+						
+								<li class="current-menu-item" ><a href="index.html">Inicio</a></li>
+							<li><a href="features.html">Servicios</a>
+								<ul>
+									
+									<li><a href="features-columns.html"><span> Servicion1</span></a></li>
+								</ul>
+							</li>
+							<li  ><a href="">Empresa</a>
+								<ul>
+									<li><a href="registro_empresa.html"><span> Registro </span></a></li>
+									<li><a href="Informacion_empresa2.html"><span> Informacion </span></a></li>
+									<li><a href="ofertas_empresa.html"><span> Ofertas </span></a></li>
+								</ul>
+							</li>
+							
+							<li><a href="">Eventos</a></li>
+							<li><a ng-model="idd" ng-init="idd=egresado._id" href="contact.html">Contacto</a></li>
+         
+
+            <li class="imagen" style="left: 510px; color:white">
+            <a  data-toggle="modal" data-target="#modalperfil"><img href="perfil.html" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="40" height="40" border="0" class="img-circle">  
+          <span><small>{{empresa.nombre | uppercase}}</small></span></a>
+              <ul>
+                <li><a href="perfil.html" class="page-scroll">Perfil</a></li>
+                 <li><a ng-click="salir()"   class="page-scroll">Salir</a></li>
+              </ul>
+
+            </li>
+
+						</ul>
+						<!-- Navigation -->
+					</div>
+					<!-- wrapper-menu -->
+				</div>
+				<!-- ENDS menu-holder -->
+			</div>
+			<!-- ENDS Menu -->
+				
+			
+			<!-- MAIN -->
+			<div id="main" style="olor: #78797b;">
+				<!-- wrapper-main -->
+				<div class="wrapper">
+<br><br>
+<!-- title -->
+						<div id="page-title">
+							<span class="title">Empleos</span>
+							<span class="subtitle">Empleos de tu empresa</span>
+						</div>
+						<!-- ENDS title -->
+
+					
+
+<style type="text/css">	
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+</style>
+
+				 <!-- form grid slider -->
+                <div class="x_panel" style="">
+                  <div class="x_title">
+                    <h2>Busqueda avanzada</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                    <form action="" class="search-form">
+                <div class="form-group has-feedback">
+            		<label for="search" class="sr-only">Buscar</label>
+            		<input type="text" class="form-control" name="search" id="search" placeholder="search" ng-model="buscar">
+              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+            	</div>
+            </form>
+
+                    </li>
+                      <li><a class="collapse-link"><i  class="fa fa-chevron-down"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+ <!-- form grid slider 
+
+                  <div class="container" style="position:relative;left:900;">
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-md-offset-3 col-lg-offset-0">
+      <div class="well">
+      <h3 align="center">Filtros</h3>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="location1" class="control-label">Ciudad</label>
+            <div class="input-group">
+              <div class="input-group-addon" id="basic-addon1">Txt</div>
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="type1" class="control-label">Type</label>
+            <select class="form-control" name="" id="type1">
+              <option value="">Any</option>
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pricefrom" class="control-label">Min Price</label>
+            <div class="input-group">
+              <div class="input-group-addon" id="basic-addon1">$</div>
+              <input type="text" class="form-control" id="pricefrom" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="priceto" class="control-label">Max Price</label>
+            <div class="input-group">
+              <div class="input-group-addon" id="basic-addon2">$</div>
+              <input type="text" class="form-control" id="priceto" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <p class="text-center"><a href="#" class="btn btn-danger glyphicon glyphicon-search" role="button"></a></p>
+        </form>
+      </div>
+    </div>
+	</div>
+</div>
+
+
+
+                    <div class="row grid_slider">
+
+                      <div class="col-md-6 col-sm-6 col-xs-12" style="position: relative;
+    top: -300px;
+    left: 410px;">
+                        <p>Filtrar por salario</p>
+                        <input type="text" id="range" value="" name="range" ng-model="salario2" />
+                      </div>{{salario2}}
+                      <div class="col-md-6 col-sm-6 col-xs-12" style="    position: relative;
+    top: -400px;
+    left: -60px;">
+                        <p>Filtrar por numero de vacante</p>
+                        <input type="text" id="range_25" value="" name="range" ng-model="numero" />
+                      </div>{{numero}}
+                      <div>
+                        <p>Filtrar por fecha de inicio</p>
+                        <input type="text" class="range_time24" value="" name="range" ng-model="fecha" />
+                      </div>{{fecha}}
+                    </div>
+
+                    mmm-->
+</div>
+</div>
+
+
+                <br />
+                <br />
+
+                <div class="x_panel" style="" ng-repeat="x in ofertas_todas | filter:buscar">
+                  <div class="x_title" ng-controller="registro_egresado" >
+                    <h2>{{x.perfil | uppercase}}</h2><br>
+                    <br>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12" >
+                     <a href="project.html" class="cover"><img href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTxI_t6mN6k0Sdbr_MlR52jQsYYUsxaXd5gt_oLynvkfcEOg4c-g" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTxI_t6mN6k0Sdbr_MlR52jQsYYUsxaXd5gt_oLynvkfcEOg4c-g"  alt="Feature image" style="
+    width: 150px;
+"/></a>
+                  	
+ </div>
+
+   <div class="col-md-6 col-sm-6 col-xs-12" >
+    <ul class="meta">
+<tr>
+    
+              								
+      								<li><td><strong>Fecha de apertura :</strong> </td><td>{{x.inicio | date:'dd/MM/yyyy'}}</td></li>
+      								<li><td><strong>Fecha de cierre :</strong></td><td> {{x.final | date:'dd/MM/yyyy'}} </td></li>
+											<li><td><strong>perfil :</strong> </td><td> {{x.perfil}}</td> </li>
+											<li><td><strong>Empresa :</strong> </td><td>{{ nombre_empresa(x.empresa)}}</td></li> 
+											<li><td><strong>Salario :</strong> </td><td> {{x.salario | currency}}</td></li> 
+											<li><td><strong>Vacantes :</strong> </td><td>{{x.vacantes}}</td></li> 
+											<li><td><strong>Ciudad:</strong>  </td><td> {{x.cuidad}}</td></li> 
+										</ul>
+</tr>
+								
+ </div>
+ <input type="button" ng-click="mas_informacion(x)" class="btn btn-succes" value="Mas informacion">
+                    
+                  
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                 
+                  <li><strong>Descripcion :</strong>   {{x.descripcion}}</li> 
+
+
+                  </div>
+                  
+                </div>
+                <!-- /form grid slider -->
+
+
+
+
+
+
+
+					<!-- content -->
+					<div id="content">
+						
+						<!-- Portfolio -->
+						<div id="projects-list" >
+
+								
+							
+		
+						
+
+							<!-- project -->
+						
+						</div>
+						<!-- ENDS Portfolio -->
+						
+		
+						
+			
+			
+			
+			<!-- FOOTER -->
+			<div id="footer">
+				<!-- wrapper-footer -->
+				<div class="wrapper">
+					<!-- footer-cols -->
+					<ul id="footer-cols">
+						<li class="col">
+              <h6>Paginas</h6>
+              <ul>
+                <li class="page_item"><a href="index.html">Inicio</a></li>
+                <li class="page_item"><a href="features.html">Servicos</a></li>
+                <li class="page_item"><a href="ofertas_egresado.html">Empleos</a></li>
+                <li class="page_item"><a href="eventos.html">Eventos</a></li>
+                <li class="page_item"><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+						
+						<li class="col">
+							<h6>Categories</h6>
+							<ul>
+								<li><a href="#">Webdesign projects senectus</a></li>
+								<li><a href="#/">Wordpress projects senectus</a></li>
+								<li><a href="#">Vestibulum tortor quam</a></li>
+								<li><a href="#">Code projects amet quam egestas</a></li>
+								<li><a href="#">Web design projects senectus</a></li>
+								<li><a href="#/">Marketplace projects</a></li>
+								<li><a href="#">Writting projects senectus</a></li>
+								<li><a href="#">Drawings projects fames Aenean</a></li>
+								<li><a href="#/">Wordpress projects Aenean ultricies</a></li>
+							</ul>
+						</li>
+						<li class="col">
+              <h6>Sobre la upc</h6>
+              La Universidad Popular del Cesar se encuentra ubicada en la ciudad colombiana de Valledupar, capital del departamento del Cesar, es una universidad pública del orden nacional adscrita al Ministerio de Educación Nacional. Inició labores académicas bajo el nombre de Instituto Tecnológico del Cesar "ITUCE" en el año de 1973; en 1976 cambió su nombre al actual recibiendo estatus de Universidad.
+            </li>
+						
+					</ul>
+					<!-- ENDS footer-cols -->
+				</div>
+				<!-- ENDS wrapper-footer -->
+			</div>
+			<!-- ENDS FOOTER -->
+		
+		
+			<!-- Bottom -->
+			<div id="bottom">
+				<!-- wrapper-bottom -->
+				<div class="wrapper">
+					<div id="bottom-text">2011 Nova all rights reserved. <a href="http://www.luiszuno.com"> Luiszuno.com</a> </div>
+					<!-- Social -->
+					<ul class="social ">
+						<li><a href="http://www.facebook.com" class="poshytip  facebook" title="Become a fan"></a></li>
+						<li><a href="http://www.twitter.com" class="poshytip twitter" title="Follow our tweets"></a></li>
+						<li><a href="http://www.dribbble.com" class="poshytip dribbble" title="View our work"></a></li>
+						<li><a href="http://www.addthis.com" class="poshytip addthis" title="Tell everybody"></a></li>
+						<li><a href="http://www.vimeo.com" class="poshytip vimeo" title="View our videos"></a></li>
+						<li><a href="http://www.youtube.com" class="poshytip youtube" title="View our videos"></a></li>
+					</ul>
+					<!-- ENDS Social -->
+					<div id="to-top" class="poshytip" title="To top"></div>
+				</div>
+				<!-- ENDS wrapper-bottom -->
+			</div>
+			<!-- ENDS Bottom -->
+
+			  <!-- jQuery -->
+    <script src="admin3/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="admin3/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="admin3/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="admin3/vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="admin3/vendors/moment/min/moment.min.js"></script>
+    <script src="admin3/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- Ion.RangeSlider -->
+    <script src="admin3/vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <!-- Bootstrap Colorpicker -->
+    <script src="admin3/vendors/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <!-- jquery.inputmask -->
+    <script src="admin3/vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- jQuery Knob -->
+    <script src="admin3/vendors/jquery-knob/dist/jquery.knob.min.js"></script>
+    <!-- Cropper -->
+    <script src="admin3/vendors/cropper/dist/cropper.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="admin3/build/js/custom.min.js"></script>
+     <!-- Ion.RangeSlider -->
+    <script>
+      $(document).ready(function() {
+        $("#range_27").ionRangeSlider({
+          type: "double",
+          min: 1000000,
+          max: 2000000,
+          grid: true,
+          force_edges: true
+        });
+        $("#range").ionRangeSlider({
+          hide_min_max: true,
+          keyboard: true,
+          min: 0,
+          max: 5000,
+          from: 1000,
+          to: 4000,
+          type: 'double',
+          step: 1,
+          prefix: "$",
+          grid: true
+        });
+        $("#range_25").ionRangeSlider({
+          type: "double",
+          min: 1000000,
+          max: 2000000,
+          grid: true
+        });
+        $("#range_26").ionRangeSlider({
+          type: "double",
+          min: 0,
+          max: 10000,
+          step: 500,
+          grid: true,
+          grid_snap: true
+        });
+        $("#range_31").ionRangeSlider({
+          type: "double",
+          min: 0,
+          max: 100,
+          from: 30,
+          to: 70,
+          from_fixed: true
+        });
+        $(".range_min_max").ionRangeSlider({
+          type: "double",
+          min: 0,
+          max: 100,
+          from: 30,
+          to: 70,
+          max_interval: 50
+        });
+        $(".range_time24").ionRangeSlider({
+          min: +moment().subtract(12, "hours").format("X"),
+          max: +moment().format("X"),
+          from: +moment().subtract(6, "hours").format("X"),
+          grid: true,
+          force_edges: true,
+          prettify: function(num) {
+            var m = moment(num, "X");
+            return m.format("Do MMMM, HH:mm");
+          }
+        });
+      });
+    </script>
+    <!-- /Ion.RangeSlider -->
+	
+	</body>
+</html>
